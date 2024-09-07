@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><title>{{ song.title }}</title></head>
+<body>
+    <h1>{{ song.title }}</h1>
+    <p>Artist: {{ song.artist.name }}</p>
+    <audio controls>
+        <source src="{{ song.audio_file.url }}" type="audio/mpeg">
+    </audio>
+</body>
+</html>
